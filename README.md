@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
+# 📚 Proyecto - Catalogo De Libros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web desarrollada con React y TypeScript que permite explorar un catálogo de libros obtenidos desde la API de Open Library. La aplicación incluye funcionalidades como filtrado por géneros, gestión de favoritos con persistencia en localStorage y notificaciones para las acciones del usuario.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+**1. Visualización del Catálogo de Libros**
+- Muestra los libros en tarjetas organizadas en un layout responsivo en cuadrícula
+- Cada tarjeta muestra: portada del libro, título, autor e información adicional
+- Diseño adaptable para diferentes dispositivos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+**2. Sistema de Filtrado**
+- Panel de filtros con géneros disponibles (Romance, Ciencia Ficción, Fantasía, Misterio, etc.)
+- Filtrado dinámico que actualiza la lista de libros en tiempo real
+- Interfaz intuitiva para seleccionar/deseleccionar múltiples filtros
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**3. Gestión de Favoritos**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Botón "Agregar a Favoritos" en cada tarjeta de libro
+- Almacenamiento persistente en localStorage
+- Persistencia de favoritos al recargar la página
+
+
+**4. Sistema de Notificaciones**
+
+- Notificaciones toast para acciones del usuario
+- Mensajes personalizados para agregar/remover favoritos
+- Implementado con react-toastify a través de un custom hook
+
+
+**5. Custom Hooks**
+
+- **useFetchData:** Hook para obtener datos de la API de Open Library
+- **useNotification:** Hook para gestionar las notificaciones toast
+
+
+## 🛠️ Tecnologías Utilizadas
+
+- **React 18** - Biblioteca principal para la interfaz de usuario
+- **TypeScript** - Tipado estático para mayor robustez del código
+- **React Toastify** - Sistema de notificaciones
+- **LocalStorage API** - Persistencia de datos
+- **Open Library API** - Fuente de datos de libros
+- **CSS/Tailwind** - Estilos y diseño responsivo (según implementación)
+
+## 🧑🏽‍💻 Información del Desarrollador
+- [Daniel Mancia](https://github.com/Daniel-Mancia22) - DevMadCode
+
+## 📝 Nota 
+Esta aplicación fue desarrollada como parte de un proyecto académico/práctico para demostrar habilidades en **React**, **TypeScript** y **gestión de estado.**
