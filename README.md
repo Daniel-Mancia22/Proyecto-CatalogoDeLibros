@@ -47,7 +47,7 @@ Este proyecto es una aplicación web desarrollada con React y TypeScript que per
 - **CSS/Tailwind** - Estilos y diseño responsivo (según implementación)
 
 ## 🧑🏽‍💻 Información del Desarrollador
-- [Daniel Mancia](https://github.com/Daniel-Mancia22) - DevMadCode
+- **[Daniel Mancia](https://github.com/Daniel-Mancia22) - DevMadCode**
 
 ## 📝 Nota 
 Esta aplicación fue desarrollada como parte de un proyecto académico/práctico para demostrar habilidades en **React**, **TypeScript** y **gestión de estado.**
