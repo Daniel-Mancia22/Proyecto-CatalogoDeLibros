@@ -46,7 +46,7 @@ Este proyecto es una aplicación web desarrollada con React y TypeScript que per
 - **Open Library API** - Fuente de datos de libros
 - **CSS/Tailwind** - Estilos y diseño responsivo (según implementación)
 
-## 🧑🏽‍💻 Información del Desarrollador
+## 🧑🏽‍💻 Desarrollador
 - [Daniel Mancia](https://github.com/Daniel-Mancia22) - DevMadCode
 
 ## 📝 Nota 
